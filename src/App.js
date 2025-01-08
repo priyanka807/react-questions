@@ -1,7 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+
 import Startresetpause from './startpausestop/startresetstop';
-import Infintiveballer from './infintiveballer/infintiveballer';
 
 import Searchdata from './searchdata/searchdata';
 import Pagination from './pagination/pagination';
@@ -16,6 +15,7 @@ import DeleteCheckboxCondition from './deleteCheckboxCondition/deleteCheckboxCon
 import SwapList from './swapList/swapList';
 import SelectfavourteGameAndMovie from './selectfavourteGameAndMovie/selectfavourteGameAndMovie';
 import UseTransitionHooks from './hooks/useTransitionHooks';
+import Infintiveballer from './infintiveballer1/infintiveballer';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
 {/* <DeleteCheckboxCondition/> */}
 {/* <SwapList/> */}
 {/* <SelectfavourteGameAndMovie/> */}
-
+<Infintiveballer/>
   </>
   );
 }
