@@ -18,6 +18,7 @@ useEffect(()=>{
 
   return (
     <>
+    {searchTerm}
   <input type=""  placeholder='...search here' onChange={(e)=>setSearchTerm(e.target.value)}/>  
     </>
   )

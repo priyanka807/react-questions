@@ -8,13 +8,14 @@ const Infintiveballer = () => {
     const itemLength = 3
     useEffect(()=>{
         let interval ;
-        if(isClick) {
+      
         interval =     setInterval(()=>{
+          if(isClick) {
                 setCurrentBox((prev)=>(prev+ 1 + 3)% itemLength)
-       
+           
+              }
             },1000)
-    
-        }
+
  
       return ()=>clearInterval(interval)
     },[isClick,currentBox])
@@ -25,7 +26,8 @@ const Infintiveballer = () => {
 {
     [1,2,3].map((items,index)=>(
         <>
-        <div onClick={()=>setIsClick(!isClick)} key={index} style={{width:"200px",height:"100px"}}  className={`box  ${currentBox===index?"gray_background":'green_background'}`}>
+        {/* className={`box  ${currentBox===index?"gray_background":'green_background'}`} */}
+        <div onClick={()=>setIsClick(!isClick)} key={index} style={{width:"200px",height:"100px",display:"flex",justifyContent:"center",alignItems:"center",color:"white",background:currentBox===index?"gray":"green"}}  >
             {/* {items} {currentBox===index&&<i class="fa-solid fa-arrow-right" style={{marginLeft:"20px"}}  ></i>} */}
             {items} {currentBox===index&&<FaArrowRight style={{marginLeft:"20px"}}/>}
 

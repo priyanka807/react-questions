@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -50,3 +50,21 @@
   background: green;
 
 }
+
+.navbar-toggler:focus{
+  box-shadow: none;
+  border: 1px solid #ffffff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--bs-navbar-active-color);
+  background-color: #0d1016;
+
+} */
+
+/* .navbar-expand-md .navbar-nav .nav-link {
+  margin-right: 10px;
+}
+.border_white{
+  border: 1px solid #ffffff !important;
+} */
