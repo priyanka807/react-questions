@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { DarkModeContext } from './context'
 import Store from './store'
+// usecontext is react to hook , it is used to simplify manage state management in a single store . it fixes the prop drilling issues .we can access the value of state throughout the entire application.
 
 const DarkModeUsingUseContext = () => {
    const {darkMode,setDarkMode}  = useContext(DarkModeContext)

@@ -9,8 +9,6 @@ const DeleteCheckboxCondition = () => {
     const updatedStatuses = [...checkboxStatuses];
     updatedStatuses[index] = !updatedStatuses[index];
     setCheckboxStatuses(updatedStatuses);
-
-    // The else condition will only execute if all elements in the array fail to meet the condition in some(). 
     console.log(updatedStatuses,'updatedStatuses')
     if (updatedStatuses.some(status=> !status)) {
  

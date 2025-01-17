@@ -23,6 +23,7 @@ import Calculator1 from './calculator1/calculator1';
 import ParentComponent from './props/props';
 import { DarkModeContext } from './darkModeUsingUseContext/context';
 import DarkModeUsingUseContext from './darkModeUsingUseContext/darkModeUsingUseContext';
+import SwapListCheckboxCondition from './swapListCheckboxCondition/swapListCheckboxCondition';
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
 {/* <Cleanupfunction/> */}
 {/* <Products/> */}
 {/* <Parent/> */}
-{/* <DeleteCheckboxCondition/> */}
+<DeleteCheckboxCondition/>
 {/* <SwapList/> */}
 {/* <SelectfavourteGameAndMovie/> */}
 {/* <Infintiveballer/>
@@ -52,7 +53,9 @@ function App() {
 {/* <NavbarUsingTailwind/> */}
 {/* <Calculator1/> */}
 {/* <ParentComponent/> */}
-<DarkModeUsingUseContext/>
+{/* <DarkModeUsingUseContext/> */}
+{/* <SwapList/>
+<SwapListCheckboxCondition/> */}
   </>
   );
 }
