@@ -24,9 +24,14 @@ import ParentComponent from './props/props';
 import { DarkModeContext } from './darkModeUsingUseContext/context';
 import DarkModeUsingUseContext from './darkModeUsingUseContext/darkModeUsingUseContext';
 import SwapListCheckboxCondition from './swapListCheckboxCondition/swapListCheckboxCondition';
-
+import Slider from './slider/slider';
+import { products } from './utlis/products';
 
 function App() {
+  const skinCareProducts = products.filter((data)=>data.category==="skin care")
+  const homeopathyProducts = products.filter((data)=>data.category==="Homeopathy")
+  const hairCareProducts = products.filter((data)=>data.category==="hair care")
+console.log(hairCareProducts,'homeopathyProducts hair care')
   return (
     <>
    {/* <Startresetpause/>
@@ -40,7 +45,7 @@ function App() {
 {/* <Cleanupfunction/> */}
 {/* <Products/> */}
 {/* <Parent/> */}
-<DeleteCheckboxCondition/>
+{/* <DeleteCheckboxCondition/> */}
 {/* <SwapList/> */}
 {/* <SelectfavourteGameAndMovie/> */}
 {/* <Infintiveballer/>
@@ -56,6 +61,18 @@ function App() {
 {/* <DarkModeUsingUseContext/> */}
 {/* <SwapList/>
 <SwapListCheckboxCondition/> */}
+{/* {products.map((data)=>(
+  <Slider  title={data.category} data={data.data}/>
+))} */}
+
+<Slider   data={skinCareProducts}/>
+<div>banner</div>
+<div>other product</div>
+<Slider   data={homeopathyProducts}/>
+<div>banner</div>
+<div>other product</div>
+<Slider   data={hairCareProducts}/>
+<Slider   data={hairCareProducts}/>
   </>
   );
 }
