@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import Searchdata from './searchdata/searchdata';
-
 import Debouncing from './debouncing/debouncing';
 import UseEffectHooks from './hooks/useEffectHooks';
 import Cleanupfunction from './hooks/cleanupFunction';
@@ -10,11 +9,9 @@ import DeleteCheckboxCondition from './deleteCheckboxCondition/deleteCheckboxCon
 import SwapList from './swapList/swapList';
 import SelectfavourteGameAndMovie from './selectfavourteGameAndMovie/selectfavourteGameAndMovie';
 import UseTransitionHooks from './hooks/useTransitionHooks';
-import Infintiveballer from './infintiveballer1/infintiveballer';
-import Stoppauserest from './stoppausereset1/stoppauserest';
+
 import Todolist from './todolist/todolist';
 import Pagination from './pagination1/pagination';
-import Carousal from './carousal1/carousal';
 
 import Card from './common/card';
 import NavbarUsingReactBootstrap from './navbar/navbarUsingReactBootstrap';
@@ -23,7 +20,6 @@ import Calculator1 from './calculator1/calculator1';
 import ParentComponent from './props/props';
 import { DarkModeContext } from './darkModeUsingUseContext/context';
 import DarkModeUsingUseContext from './darkModeUsingUseContext/darkModeUsingUseContext';
-import SwapListCheckboxCondition from './swapListCheckboxCondition/swapListCheckboxCondition';
 import Slider from './slider/slider';
 import { products } from './utlis/products';
 
@@ -45,7 +41,7 @@ console.log(hairCareProducts,'homeopathyProducts hair care')
 {/* <Cleanupfunction/> */}
 {/* <Products/> */}
 {/* <Parent/> */}
-{/* <DeleteCheckboxCondition/> */}
+<DeleteCheckboxCondition/>
 {/* <SwapList/> */}
 {/* <SelectfavourteGameAndMovie/> */}
 {/* <Infintiveballer/>
@@ -60,19 +56,19 @@ console.log(hairCareProducts,'homeopathyProducts hair care')
 {/* <ParentComponent/> */}
 {/* <DarkModeUsingUseContext/> */}
 {/* <SwapList/>
-<SwapListCheckboxCondition/> */}
+
 {/* {products.map((data)=>(
   <Slider  title={data.category} data={data.data}/>
 ))} */}
 
-<Slider   data={skinCareProducts}/>
+{/* <Slider   data={skinCareProducts}/>
 <div>banner</div>
 <div>other product</div>
 <Slider   data={homeopathyProducts}/>
 <div>banner</div>
 <div>other product</div>
 <Slider   data={hairCareProducts}/>
-<Slider   data={hairCareProducts}/>
+<Slider   data={hairCareProducts}/> */}
   </>
   );
 }
