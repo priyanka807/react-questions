@@ -11,17 +11,16 @@ import SelectfavourteGameAndMovie from './selectfavourteGameAndMovie/selectfavou
 import UseTransitionHooks from './hooks/useTransitionHooks';
 
 import Todolist from './todolist/todolist';
-import Pagination from './pagination1/pagination';
-
 import Card from './common/card';
 import NavbarUsingReactBootstrap from './navbar/navbarUsingReactBootstrap';
 import NavbarUsingTailwind from './navbar/navbarUsingTailwind';
-import Calculator1 from './calculator1/calculator1';
+import Calculator from './calculator/calculator';
 import ParentComponent from './props/props';
 import { DarkModeContext } from './darkModeUsingUseContext/context';
 import DarkModeUsingUseContext from './darkModeUsingUseContext/darkModeUsingUseContext';
 import Slider from './slider/slider';
 import { products } from './utlis/products';
+import CountriesAndCities from './countriesAndCities/countriesAndCities';
 
 function App() {
   const skinCareProducts = products.filter((data)=>data.category==="skin care")
@@ -41,7 +40,7 @@ console.log(hairCareProducts,'homeopathyProducts hair care')
 {/* <Cleanupfunction/> */}
 {/* <Products/> */}
 {/* <Parent/> */}
-<DeleteCheckboxCondition/>
+{/* <DeleteCheckboxCondition/> */}
 {/* <SwapList/> */}
 {/* <SelectfavourteGameAndMovie/> */}
 {/* <Infintiveballer/>
@@ -69,6 +68,8 @@ console.log(hairCareProducts,'homeopathyProducts hair care')
 <div>other product</div>
 <Slider   data={hairCareProducts}/>
 <Slider   data={hairCareProducts}/> */}
+
+<CountriesAndCities/>
   </>
   );
 }

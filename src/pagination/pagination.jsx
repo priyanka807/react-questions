@@ -39,6 +39,7 @@ if(currentPage>1){
         <div  className=''  style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'50px'}}>
        <button onClick={()=>handlePrevious()}  className={currentPage===1?'disabled':''}>Previous</button>              
 {[1,2,3,4,5,6,7,8,9,10].map((items,index)=>(<><button onClick={()=>setCurrentPage(items)}>{items}</button></>))}
+{/* disabled={currentPage>=10?true:false} */}
 <button onClick={()=>handleNext()}  className={currentPage===10?'disabled':''} >Next</button>  
       </div>
       <div   style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>

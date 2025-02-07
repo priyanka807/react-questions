@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const Calculator1 = () => {
+const Calculator = () => {
 
     const [digits,setDigits] = useState("")
     console.log(digits,'digits')
@@ -43,4 +43,4 @@ console.log(error,'error')
   )
 }
 
-export default Calculator1
+export default Calculator
