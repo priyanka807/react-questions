@@ -21,6 +21,9 @@ import DarkModeUsingUseContext from './darkModeUsingUseContext/darkModeUsingUseC
 import Slider from './slider/slider';
 import { products } from './utlis/products';
 import CountriesAndCities from './countriesAndCities/countriesAndCities';
+import CleanupFunction from './cleanupfunction/cleanupfunction';
+import ShowMoreAndLess from './showMoreAndLess/showMoreAndLess';
+import Form from './form/form';
 
 function App() {
   const skinCareProducts = products.filter((data)=>data.category==="skin care")
@@ -69,7 +72,11 @@ console.log(hairCareProducts,'homeopathyProducts hair care')
 <Slider   data={hairCareProducts}/>
 <Slider   data={hairCareProducts}/> */}
 
-<CountriesAndCities/>
+{/* <CountriesAndCities/> */}
+{/* <CleanupFunction/> */}
+{/* <ShowMoreAndLess/> */}
+
+<Form/>
   </>
   );
 }
